@@ -1,0 +1,41 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 30px;
+  background: #f4f4f4;
+}
+
+/* Part 1: Button with Transition */
+.styled-btn {
+  background: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.styled-btn:hover {
+  transform: scale(1.1);
+  background: #45a049;
+}
+
+/* Part 2: Box controlled by JS */
+.box {
+  width: 100px;
+  height: 100px;
+  margin: 20px auto;
+  background: coral;
+  transition: background 0.5s ease;
+}
+
+/* Part 3: CSS Animation */
+.move {
+  animation: slide 1s forwards;
+}
+
+@keyframes slide {
+  from { transform: translateX(0); }
+  to   { transform: translateX(200px); }
+}
